@@ -16,16 +16,186 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script src="https://kit.fontawesome.com/0f87bb525e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <header class="header-container">
+    <nav class="header-nav">
+      <a href="#about" class="nav-item">ABOUT</a>
+      <a href="#skills" class="nav-item">SKILLS</a>
+      <a href="#projects" class="nav-item">PROJECTS</a>
+      <a href="#contact">
+        <button class="contact-button nav-item">CONTACT</button>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div class="introduction">
+      <h1>Hello, I'm Ivy</h1>
+      <h3>I'm a Front-End Developer.</h3>
+    </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+    <div class="about-container" id="about">
+      <h2>About Me</h2>
+      <div class="profile-img"></div>
+      <p class="about--description">
+        Hi! I'm Ivy Patterson. <br/>
+        I'm a Front-End Developer with an eye for design and a passion for problem-solving.<br/> <br/>
+        I spent a number of years searching for the right career path. I tried out two different college majors, worked as a photographer, a customer service representative, and a bartender. Burnout came all-too quickly, and my pay didn't justify the exhaustion I felt. <br/> <br/>
+        I turned to the tech industry in the hopes that it would bring me a sustainable career and more financial stability. What I <em>didn't</em> foresee was just how much I would come to love this work.
+        As a learner and a problem-solver, I feel completely at home in Web Development.
+      </p>
+      <div class="about--more-info hide">
+        <p>The granny life is the life for me. I love to read, crochet, knit, and hang out with my cats, Winston (left) and Elton (right). </p>
+        <div class="cat-photo"></div>
+        <p>I also have a beloved basset hound named Lucy. She is constantly talking and she WILL eat your food if you don't keep an eye on it.
+          Also sometimes if you do keep an eye on it.
+        </p>
+        <div class="dog-photo"></div>
+      </div>
+      <button class="more-button">Party in the back:</button>
+    </div>
+
+    <div class="skills-container" id="skills">
+      <h2>Skills</h2>
+      <div class="skill-icons-container">
+        <i class="skill-icon fa-brands fa-css3"> <span>CSS3</span></i>
+        <i class="skill-icon fa-brands fa-html5"> <span>HTML5</span></i>
+        <i class="skill-icon fa-brands fa-square-js"> <span>Vanilla JavaScript</span></i>
+        <i class="skill-icon fa-brands fa-react"> <span>React</span></i>
+      </div>
+      <div class="tools-container">
+        <h2>Tools</h2>
+        <div class="tools-list">
+          <p>ES6</p>
+          <p>FTP & Web Hosting</p>
+          <p>Rest API's</p>
+          <p>Version Control</p>
+          <p>Git / Command Line</p>
+          <p>GitHub</p>
+          <p>CodeSandbox</p>
+          <p>Photoshop + Figma</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-container" id="projects">
+      <h2>Projects</h2>
+      
+      <div class="project">
+        <h4>Unplugged Retreat</h4>
+        <p>Website for tech retreat center, built mobile-first with HTML5 and styled with CSS3. Multi-page layout with responsive design.</p>
+        <a href="https://ivy-p.github.io/unplugged-retreat/" target="_BLANK">
+          <img src="./img/unplugged-retreat.png" class="project-img" alt="">
+        </a>
+        <div class="project-tools">
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-html5"></i>
+          <p>Media Queries</p>
+          <p>GitHub</p>
+          <p>Responsive Design</p>
+          <p>Photoshop</p>
+        </div>
+
+      <div class="project">
+        <h4>Basketball Score-Counter</h4>
+        <p>Fully interactive basketball score-counter app. Built with HTML, CSS, and Vanilla JavaScript.</p>
+        <a href="https://polite-naiad-26477f.netlify.app/" target="_BLANK">
+          <img src="./img/basketball-counter.png" class="project-img" alt="Basketball Score-counter website">
+        </a>
+        <div class="project-tools">
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-square-js"></i>
+          <p>Media Queries</p>
+          <p>GitHub</p>
+          <p>Responsive Design</p>
+        </div>
+
+      <div class="project">
+        <h4>Sticky Notes App</h4>
+        <p>Sticky Notes App built  with JavaScript React and styled with CSS. Use of lifecycle methods was employed to save progress in-between page refreshes.</p>
+        <a href="https://lqp2ic.csb.app/" target="_BLANK">
+          <img src="./img/sticky-notes.png" class="project-img" alt="Sticky Notes app">
+        </a>
+        <div class="project-tools">
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-react"></i>
+          <p>GitHub</p>
+          <p>JSX</p>
+          <p>CodeSandbox</p>
+          <p>Lifecycle Methods</p>
+        </div>
+
+      <div class="project">
+        <h4>Guess The Word</h4>
+        <p>Guess The Word game built with Vanilla JavaScript and rest API's for randomized words.</p>
+        <a href="https://ivy-p.github.io/guess-the-word/" target="_BLANK">
+          <img src="./img/guess-the-word.png" class="project-img" alt="Guess the word game">
+        </a>
+        <div class="project-tools">
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-square-js"></i>
+          <p>Rest API</p>
+          <p>CodeSandbox</p>
+          <p>Git / GitHub</p>
+        </div>
+
+      <div class="project">
+        <h4>GitHub Repo Gallery</h4>
+        <p>Interactive GitHub Repo Gallery, built with Vanilla JavaScript. Includes a search-bar feature.</p>
+        <a href="https://ivy-p.github.io/github-repo-gallery/" target="_BLANK">
+          <img src="./img/repo-gallery.png" class="project-img" alt="Github repo gallery preview">
+        </a>
+        <div class="project-tools">
+          <i class="fa-brands fa-css3"></i>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-square-js"></i>
+          <p>Rest API</p>
+          <p>CodeSandbox</p>
+          <p>Git / GitHub</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-container" id="contact">
+      <h1>Contact me!</h1>
+      <div class="contact-form">
+        <form action="https://getform.io/f/a299afcb-6ae2-4b3b-890f-79792baa5164" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="emailaddress" placeholder="Enter your email address">
+
+          <label for="message">Message</label>
+          <input type="text" id="message" name="message" placeholder="Enter your message">
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="contact-info">
+        
+      </div>
+    </div>
+  </main>
+  
+
+
+
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
