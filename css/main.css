@@ -451,28 +451,8 @@ i {
 /* GENERAL STYLES */
   html {
     scroll-padding-top: 135px;
+    font-size: 18px;
   }
-
-  h1 {
-    font-size: 5rem;
-  }
-
-  h2 {
-    font-size: 2.275rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-  }
-
-  p, a, button, input {
-    font-size: 1.125rem;
-  }
-
-  i {
-    font-size: 2rem;
-  }
-
 /* HEADER */
   .header-container {
     padding: 50px;
@@ -666,33 +646,20 @@ i {
 @media only screen and (min-width: 1200px){
 /* GENERAL STYLES */
   html {
-    scroll-padding-top: 220px;
-  }
-  h1 {
-    font-size: 6rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  p, a, button, input {
-    font-size: 1.5rem;
+    scroll-padding-top: 105px;
+    font-size: 19px;
   }
 
 /* HEADER */
   .header-container {
     display: flex;
     justify-content: space-between;
+    padding: 10px 15px;
   }
 
 .logo {
   display:block;
-  width: 120px;
+  width: 85px;
 }
 
 .nav-item {
@@ -711,14 +678,13 @@ i {
 
   .profile-img {
     width: 315px;
-    height: 400px;
     border-radius: 15px;
   }
 
   .cat-photo,
   .dog-photo {
-    width: 300px;
-    height: 275px;
+    width: 250px;
+    height: 250px;
   }
 
 /* PROJECTS */
