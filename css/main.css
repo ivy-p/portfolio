@@ -108,6 +108,7 @@ body {
   background: #564256;
   color: #ffffff;
   text-align: center;
+  font-family: 'Work Sans', sans-serif;
 }
 
 h1 {
@@ -116,13 +117,13 @@ h1 {
   font-style: italic;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Work Sans', sans-serif;
+h2 {
+  font-size: 2rem;
   font-weight: 500;
 }
 
-h2 {
-  font-size: 2rem;
+h3 {
+  font-size: 1rem;
 }
 
 p, a, button {
@@ -130,6 +131,9 @@ p, a, button {
   font-weight: 400;
   text-decoration: none;
   color: white;
+}
+
+p, a, button, input {
   font-size: 0.875rem;
 }
 
@@ -139,6 +143,10 @@ button {
   border-radius: 17px;
   padding: 5px 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+i {
+  font-size: 1.125rem;
 }
 
 .hide {
@@ -272,7 +280,6 @@ button {
 }
 
 .skill-icon {
-  font-size: 1.25rem;
   color: #e9b14c;
   background-color: white;
   padding: 15px;
@@ -358,10 +365,6 @@ button {
   margin-bottom: 40px;
 }
 
-.project-tools i {
-  font-size: 2rem;
-}
-
 /* CONTACT */
 .contact-container {
   width: 90%;
@@ -445,8 +448,29 @@ button {
 
 /*=============== TABLET STYLES =====================*/
 @media only screen and (min-width: 768px){
+/* GENERAL STYLES */
   html {
     scroll-padding-top: 135px;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2.275rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p, a, button, input {
+    font-size: 1.125rem;
+  }
+
+  i {
+    font-size: 2rem;
   }
 
 /* HEADER */
@@ -455,7 +479,6 @@ button {
   }
 
   .nav-item {
-    font-size: 1.375rem;
     margin: 0 5px;
   }
 
@@ -480,12 +503,7 @@ button {
     height: 400px;
   }
 
-  .intro-heading {
-    font-size: 5rem;
-  }
-
   .intro-subheading {
-    font-size: 1.75rem;
     font-family: monospace;
     border-right: 2px solid white;
     animation:typist 15s steps(26) infinite, caret 0.8s infinite step-end;
@@ -518,7 +536,6 @@ button {
 
   .about-container h2 {
     width: 100%;
-    font-size: 2.125rem;
     margin-bottom: 40px;
   }
 
@@ -537,12 +554,10 @@ button {
   .about--more-info p {
     text-align: left;
     width: 50%;
-    font-size: 1.125rem;
   }
 
   .more-button {
     margin-top: 30px;
-    font-size: 1.125rem;
     padding: 10px;
     background-color: #CDB1B7;
   }
@@ -582,10 +597,6 @@ button {
     width: 45%;
   }
 
-  .tools-list p {
-    font-size: 1.125rem;
-  }
-
 /* PROJECTS */
   .projects-container {
     flex-flow: row wrap;
@@ -601,10 +612,6 @@ button {
   .project {
     width: 45%;
     margin: 0 auto;
-  }
-
-  .project-button {
-    font-size: 1.125rem;
   }
 
   .project-button:hover {
@@ -661,8 +668,20 @@ button {
   html {
     scroll-padding-top: 220px;
   }
+  h1 {
+    font-size: 6rem;
+  }
+
   h2 {
     font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p, a, button, input {
+    font-size: 1.5rem;
   }
 
 /* HEADER */
@@ -677,7 +696,6 @@ button {
 }
 
 .nav-item {
-  font-size: 1.5rem;
   margin: 0 25px;
 }
 
@@ -689,19 +707,6 @@ button {
 /* ABOUT */
   .about--description {
     width: 60%;
-  }
-
-  .about-container h2 {
-    font-size: 3rem;
-  }
-
-  .about--description p,
-  .about--more-info p {
-    font-size: 1.5rem;
-  }
-
-  .more-button {
-    font-size: 1.5rem;
   }
 
   .profile-img {
@@ -720,9 +725,6 @@ button {
   .project {
     width: 30%;
     margin-bottom: 50px;
-  }
-  .project p {
-    font-size: 1.5rem;
   }
 
   .project-img {
