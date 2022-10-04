@@ -96,6 +96,12 @@ textarea {
 * {
   margin: 0;
   padding: 0;
+  touch-action: manipulation;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 86px;
 }
 
 body {
@@ -105,7 +111,7 @@ body {
 }
 
 h1 {
-  font-size: 3.125;
+  font-size: 3.125rem;
   font-family: 'DM Serif Display', serif;
   font-style: italic;
 }
@@ -144,7 +150,7 @@ button {
 
 .header-container {
   background-color: #a2ad59;
-  padding: 30px 20px;
+  padding: 30px 8%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   position: sticky; top: 0;
 }
@@ -183,13 +189,17 @@ button {
   justify-content: center;
   flex-flow: column nowrap;
   background-color: #6D8A96;
-  padding: 30px 10px;
+  padding: 30px 8%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
+.about-container p {
+  margin: 7px 0;
+}
+
 .profile-img {
-  height: 210px;
-  width: 210px;
+  height: 240px;
+  width: 240px;
   background-image: url("../img/profile-pic.jpg");
   background-size: cover;
   background-position: center;
@@ -245,7 +255,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-  padding: 30px 10px;
+  padding: 30px 10%;
 }
 
 .skills-container h2,
@@ -299,18 +309,26 @@ button {
   justify-content: center;
   width: 100%;
   flex-flow: column nowrap;
-  padding: 30px 7px;
+  padding: 30px 5%;
 }
 
 .projects-container h2 {
   margin: 0 0 15px 0;
 }
 
-.project h4 {
+.project-button {
   background-color: #6D8A96;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.project-button:active {
+  color: #564256;
+}
+
+.project-button:after {
+  color: white;
 }
 
 .project p {
@@ -348,7 +366,83 @@ button {
   background-color: #a2ad59;
   padding: 15px;
   border-radius: 15px;
+  font-family: 'Work Sans', sans-serif;
+  margin: auto;
+  margin-bottom: 60px;
 }
+
+.contact-container h2,
+.contact-info h2 {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form p {
+  margin-bottom: 3px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.input-name,
+.input-email,
+.input-message {
+  border: none;
+  margin-bottom: 10px;
+  font-style: italic;
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.input-message {
+  height: 50px;
+  /*figure out how to wrap words when entering text */
+}
+
+.input-submit {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #6D8A96;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  margin-bottom: 25px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 40px;
+}
+
+.contact-icons a i {
+  font-size: 2rem;
+}
+
+.input-submit:active,
+.contact-icons a:active {
+  color: #564256;
+}
+
+.input-submit:after,
+.contact-icons a:after {
+  color: white;
+}
+
+/*=============== TABLET STYLES =====================*/
+@media only screen and (min-width: 768px){}
+
+/*================= DESKTOP STYLES =======================*/
+@media only screen and (min-width: 1200px){
+
 
 
 

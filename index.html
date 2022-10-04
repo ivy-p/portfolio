@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Ivy Patterson | Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -34,9 +34,9 @@
       <a href="#about" class="nav-item">ABOUT</a>
       <a href="#skills" class="nav-item">SKILLS</a>
       <a href="#projects" class="nav-item">PROJECTS</a>
-      <a href="#contact">
+      <form action="#contact">
         <button class="contact-button nav-item">CONTACT</button>
-      </a>
+      </form>
     </nav>
   </header>
   <main>
@@ -48,13 +48,13 @@
     <div class="about-container" id="about">
       <h2>About Me</h2>
       <div class="profile-img"></div>
-      <p class="about--description">
-        Hi! I'm Ivy Patterson. <br/>
-        I'm a Front-End Developer with an eye for design and a passion for problem-solving.<br/> <br/>
-        I spent a number of years searching for the right career path. I tried out two different college majors, worked as a photographer, a customer service representative, and a bartender. Burnout came all-too quickly, and my pay didn't justify the exhaustion I felt. <br/> <br/>
-        I turned to the tech industry in the hopes that it would bring me a sustainable career and more financial stability. What I <em>didn't</em> foresee was just how much I would come to love this work.
-        As a learner and a problem-solver, I feel completely at home in Web Development.
-      </p>
+      <div class="about--description">
+        <p>Hi! I'm Ivy Patterson.</p>
+        <p>I'm a Front-End Developer with an eye for design and a passion for problem-solving.</p>
+        <p> I spent a number of years searching for the right career path. I tried out two different college majors, worked as a photographer, a customer service representative, and a bartender. Burnout came all-too quickly, and my pay didn't justify the exhaustion I felt. </p>
+        <p>I turned to the tech industry in the hopes that it would bring me a sustainable career and more financial stability. What I <em>didn't</em> foresee was just how much I would come to love this work. As a learner and a problem-solver, I feel completely at home in Web Development.</p>
+      </div>
+        
       <div class="about--more-info hide">
         <p>The granny life is the life for me. I love to read, crochet, knit, and hang out with my cats, Winston (left) and Elton (right). </p>
         <div class="cat-photo"></div>
@@ -93,7 +93,9 @@
       <h2>Projects</h2>
       
       <div class="project">
-        <h4>Unplugged Retreat</h4>
+        <form action="https://ivy-p.github.io/unplugged-retreat/">
+          <button class="project-button">Unplugged Retreat</button>
+        </form>
         <p>Website for tech retreat center, built mobile-first with HTML5 and styled with CSS3. Multi-page layout with responsive design.</p>
         <a href="https://ivy-p.github.io/unplugged-retreat/" target="_BLANK">
           <img src="./img/unplugged-retreat.png" class="project-img" alt="">
@@ -106,9 +108,12 @@
           <p>Responsive Design</p>
           <p>Photoshop</p>
         </div>
+      </div>
 
       <div class="project">
-        <h4>Basketball Score-Counter</h4>
+        <form action="https://polite-naiad-26477f.netlify.app/">
+          <button class="project-button">Basketball Score-Counter</button>
+        </form>
         <p>Fully interactive basketball score-counter app. Built with HTML, CSS, and Vanilla JavaScript.</p>
         <a href="https://polite-naiad-26477f.netlify.app/" target="_BLANK">
           <img src="./img/basketball-counter.png" class="project-img" alt="Basketball Score-counter website">
@@ -121,9 +126,12 @@
           <p>GitHub</p>
           <p>Responsive Design</p>
         </div>
+      </div>
 
       <div class="project">
-        <h4>Sticky Notes App</h4>
+        <form action="https://lqp2ic.csb.app/">
+          <button class="project-button">Sticky Notes App</button>
+        </form>
         <p>Sticky Notes App built  with JavaScript React and styled with CSS. Use of lifecycle methods was employed to save progress in-between page refreshes.</p>
         <a href="https://lqp2ic.csb.app/" target="_BLANK">
           <img src="./img/sticky-notes.png" class="project-img" alt="Sticky Notes app">
@@ -137,9 +145,12 @@
           <p>CodeSandbox</p>
           <p>Lifecycle Methods</p>
         </div>
+      </div>
 
       <div class="project">
-        <h4>Guess The Word</h4>
+        <form action="https://ivy-p.github.io/guess-the-word/">
+          <button class="project-button">Guess The Word</button>
+        </form>
         <p>Guess The Word game built with Vanilla JavaScript and rest API's for randomized words.</p>
         <a href="https://ivy-p.github.io/guess-the-word/" target="_BLANK">
           <img src="./img/guess-the-word.png" class="project-img" alt="Guess the word game">
@@ -152,9 +163,12 @@
           <p>CodeSandbox</p>
           <p>Git / GitHub</p>
         </div>
+      </div>
 
       <div class="project">
-        <h4>GitHub Repo Gallery</h4>
+        <form action="https://ivy-p.github.io/github-repo-gallery/">
+          <button class="project-button">GitHub Repo Gallery</button>
+        </form>
         <p>Interactive GitHub Repo Gallery, built with Vanilla JavaScript. Includes a search-bar feature.</p>
         <a href="https://ivy-p.github.io/github-repo-gallery/" target="_BLANK">
           <img src="./img/repo-gallery.png" class="project-img" alt="Github repo gallery preview">
@@ -171,23 +185,42 @@
     </div>
 
     <div class="contact-container" id="contact">
-      <h1>Contact me!</h1>
+      <h2>Contact me!</h2>
+
       <div class="contact-form">
         <form action="https://getform.io/f/a299afcb-6ae2-4b3b-890f-79792baa5164" method="POST">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <p>Name</p>
+          <input class="input-name" type="text" id="name" name="name" placeholder="Enter your name">
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="emailaddress" placeholder="Enter your email address">
+          <p>Email</p>
+          <input class="input-email" type="email" id="email" name="emailaddress" placeholder="Enter your email">
 
-          <label for="message">Message</label>
-          <input type="text" id="message" name="message" placeholder="Enter your message">
+          <p>Message</p>
+          <input class="input-message" type="text" id="message" name="message" placeholder="Enter your message">
 
-          <input type="submit" value="Submit">
+          <input class="input-submit" type="submit" value="Submit">
         </form>
       </div>
+
       <div class="contact-info">
-        
+        <h2>Or, find me here</h2>
+        <div class="contact-icons">
+          <a href="sms:469-771-8174">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="mailto:pattersonivy.html@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ivy-patterson" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.github.com/ivy-p" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          
+          
+        </div>
+
       </div>
     </div>
   </main>

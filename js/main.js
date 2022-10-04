@@ -12,10 +12,12 @@ function removeHide () {
         moreButton.innerText = "Business in the front:"
         mainDescription.classList.add("hide");
         profileImage.classList.add("hide");
+        scrollTo(0, 195)
     } else {
         moreInfo.classList.add("hide")
         moreButton.innerText = "Party in the back:"
         mainDescription.classList.remove("hide");
         profileImage.classList.remove("hide");
+        scrollTo(0, 195)
     }
 }
