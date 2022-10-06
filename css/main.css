@@ -101,7 +101,7 @@ textarea {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 86px;
+  scroll-padding-top: 80.4px;
 }
 
 body {
@@ -153,6 +153,10 @@ i {
   display: none;
 }
 
+.show {
+  display: block;
+}
+
 
 /* HEADER */
 
@@ -181,6 +185,26 @@ i {
 .nav-item::after {
   color: white;
 }
+
+/* HEADER -- TOGGLE MENU */
+/* 
+.toggle-items {
+  display: none;
+  padding: 20px;
+  max-width: fit-content;
+  margin: 10px 0 10px auto;
+}
+
+.contact-button {
+  background-color: #CDB1B7;
+  padding: 8px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-button:active{
+  background-color: #998388;
+} */
 
 /* INTRODUCTION */
 
@@ -695,10 +719,11 @@ i {
 
   .project-img {
     margin-top: 20px;
+    transition: 0.4s ease-in-out;
   }
 
   .project-img:hover {
-    width: 450px;
+    width: 100%;
   }
 }
 
