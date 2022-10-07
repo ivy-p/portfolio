@@ -108,7 +108,7 @@ body {
   background: #564256;
   color: #ffffff;
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Quicksand', 'Work Sans', sans-serif;
 }
 
 h1 {
@@ -127,14 +127,14 @@ h3 {
 }
 
 p, a, button {
-  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   text-decoration: none;
   color: white;
 }
 
 p, a, button, input {
-  font-size: 0.875rem;
+  font-size: 0.95rem;
+  font-family: 'Quicksand', 'Work Sans', sans-serif;
 }
 
 button {
@@ -177,6 +177,7 @@ i {
 
 .nav-item {
   font-weight: 600;
+  color: rgb(42, 40, 40);
 }
 
 .nav-item:active {
@@ -247,6 +248,8 @@ i {
 
 .more-button {
   margin: 15px 0;
+  background-color: #564256;
+  padding: 10px;
 }
 
 .more-button:active {
@@ -309,7 +312,7 @@ i {
 /* SKILLS */
 .skills-container {
   width: 100%;
-  background-color: #CDB1B7;
+  background-color: #937279;
   width: 100%;
   display: flex;
   align-items: center;
@@ -318,8 +321,7 @@ i {
   padding: 30px 10%;
 }
 
-.skills-container h2,
-.tools-container h2 {
+.skills--title {
   margin-bottom: 17px;
   width: 100%;
 }
@@ -332,7 +334,7 @@ i {
 }
 
 .skill-icon {
-  color: #e9b14c;
+  color: #c38a20;
   background-color: white;
   padding: 15px;
   border-radius: 10px;
@@ -355,7 +357,7 @@ i {
 .tools-list p,
 .project-tools p,
 .project-tools i {
-  background-color: #e9b14c;
+  background-color: #c38a20;
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
@@ -515,7 +517,7 @@ i {
   }
 
   .nav-item:hover {
-    color:#6D8A96;
+    color: black;
   }
 
   .nav-item:active {
@@ -591,28 +593,21 @@ i {
   .more-button {
     margin-top: 30px;
     padding: 10px;
-    background-color: #CDB1B7;
   }
 
   .more-button:hover {
-    background-color:#edd3d9;
-    color:#564256;
+    background-color: #776077;
   }
 
   .more-button:active {
-    background-color: #9d868b;
-    color: white;
+    background-color: #4d3c4d;
   }
 
   .cats,
   .dog {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-  }
-
-  .about--more-info p {
-    text-align: right;
   }
 
 /* SKILLS */
@@ -737,6 +732,7 @@ i {
   .dog-photo {
     width: 200px;
     height: 200px;
+    margin: 15px 30px;
   }
 
 /* PROJECTS */
