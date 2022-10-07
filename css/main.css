@@ -245,32 +245,12 @@ i {
   margin: 15px auto;
 }
 
-.info-container {
-  animation-duration: 1s;
-  transition-timing-function: ease-in-out;
-  animation-fill-mode: both;
-  animation-name: slideup;
-}
-
-@keyframes slideup {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .more-button {
   margin: 15px 0;
 }
 
 .more-button:active {
   background-color: #806f73;
-  border: 3px solid #564256;
 }
 
 .more-button:after {
@@ -298,14 +278,23 @@ i {
   align-self: center;
 }
 
+/* smooth transitions for about section */ 
 .about--more-info {
   animation-duration: 1s;
   transition-timing-function: ease-in-out;
   animation-fill-mode: both;
-  animation-name: slide;
+  animation-name: slidein;
 }
 
-@keyframes slide {
+
+.info-container {
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
   0% {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
@@ -746,8 +735,8 @@ i {
 
   .cat-photo,
   .dog-photo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
 /* PROJECTS */
