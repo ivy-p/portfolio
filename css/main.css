@@ -226,7 +226,8 @@ i {
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-  background-color: #6D8A96;
+  background-color: #9DAEB8;
+  /* #9DAEB8*/
   padding: 30px 8%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -234,6 +235,7 @@ i {
 .about-container p {
   margin: 7px 0;
   max-width: 600px;
+  color:black;
 }
 
 .profile-img {
@@ -335,7 +337,7 @@ i {
 }
 
 .skill-icon {
-  color: #c38a20;
+  color: #6B5257;
   background-color: white;
   padding: 15px;
   border-radius: 10px;
@@ -358,10 +360,11 @@ i {
 .tools-list p,
 .project-tools p,
 .project-tools i {
-  background-color: #c38a20;
+  background-color: #DEA335;
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
+  color: #000;
 }
 
 /* PROJECTS */
@@ -380,11 +383,13 @@ i {
 }
 
 .project-button {
-  background-color: #6D8A96;
+  background-color: #9DAEB8;
+  color:#000;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  font-weight: 500;
 }
 
 .project-button:active {
@@ -429,6 +434,7 @@ i {
   font-family: 'Work Sans', sans-serif;
   margin: auto;
   margin-bottom: 200px;
+  color: #000;
 }
 
 .contact-container h2,
@@ -448,6 +454,7 @@ i {
   margin-bottom: 3px;
   text-align: left;
   margin-left: 15px;
+  color: #000;
 }
 
 .input-name,
@@ -469,12 +476,12 @@ i {
 .input-submit {
   padding: 8px;
   border-radius: 5px;
-  background-color: #6D8A96;
-  color: white;
+  background-color: #9DAEB8;
   border: none;
   margin-top: 15px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   margin-bottom: 25px;
+  font-weight: 400;
 }
 
 .contact-icons {
@@ -485,6 +492,7 @@ i {
 
 .contact-icons a i {
   font-size: 2rem;
+  color: #0F0F0F;
 }
 
 .input-submit:active,
@@ -653,7 +661,7 @@ i {
   }
 
   .project-button:after {
-    background-color: #6D8A96;
+    background-color: ;
   }
 
 /* CONTACT */
@@ -673,7 +681,7 @@ i {
   }
 
   .contact-icons a:hover{
-    color: #6D8A96;
+    color: ;
   }
 
   .contact-icons a:active {

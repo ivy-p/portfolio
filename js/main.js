@@ -1,9 +1,15 @@
 const moreButton = document.querySelector(".more-button");
-const moreInfo = document.querySelector(".about--more-info")
+const moreInfo = document.querySelector(".about--more-info");
 const profileImage = document.querySelector(".profile-img");
 const aboutDescription = document.querySelector(".about--description");
 const aboutContainer = document.getElementById("about");
-const infoContainer = document.querySelector(".info-container")
+const infoContainer = document.querySelector(".info-container");
+
+
+// const submitButton = document.querySelector("input-submit");
+// const contactName = document.querySelector(".input-name");
+// const contactEmail = document.querySelector(".input-email");
+// const contactMessage = document.querySelector(".input-message");
 
 //Adding event listener for About section button
 moreButton.addEventListener("click", removeHide)
@@ -26,11 +32,11 @@ function removeHide () {
 }
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function toggle () {
-    var x = document.querySelector(".toggle-items")
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+// function toggle () {
+//     var x = document.querySelector(".toggle-items")
+//     if (x.style.display === "block") {
+//       x.style.display = "none";
+//     } else {
+//       x.style.display = "block";
+//     }
+// };
