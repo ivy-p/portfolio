@@ -684,12 +684,16 @@ i {
     margin: 0 15px;
   }
 
-  .contact-icons a:hover{
-    color: ;
+  .contact-icons a i:hover{
+    color: rgb(62, 62, 62);
   }
 
-  .contact-icons a:active {
+  .contact-icons a i:active {
     color: #576e77;
+  }
+
+  .contact-icons a i:after {
+    color: #000;
   }
 
   .input-submit:hover {
