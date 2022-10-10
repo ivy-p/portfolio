@@ -233,6 +233,7 @@ i {
 
 .about-container p {
   margin: 7px 0;
+  max-width: 600px;
 }
 
 .profile-img {
@@ -580,8 +581,9 @@ i {
   }
 
   .profile-img {
-    height: 315px;
-    width: 315px;
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
   }
 
   .about--description,
@@ -725,7 +727,6 @@ i {
 
   .profile-img {
     width: 315px;
-    border-radius: 15px;
   }
 
   .cat-photo,
